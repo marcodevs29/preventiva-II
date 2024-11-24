@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Examen Tercer Parcial de Preventiva II</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="welcome-screen" class="welcome-container">
+        <h2>Examen Tercer Parcial de Preventiva II</h2>
+        <p>Por favor, introduce tus datos antes de iniciar el cuestionario.</p>
+        <label for="name">Nombre:</label>
+        <input type="text" id="name" placeholder="Tu nombre" required>
+        <label for="email">Correo electrónico:</label>
+        <input type="email" id="email" placeholder="Tu correo electrónico" required>
+        <button id="startBtn">Comenzar</button>
+    </div>
+    
+    <div id="quiz-screen" class="quiz-container" style="display: none;">
+        <!-- Aquí va el contenido del cuestionario como lo tienes actualmente -->
+    </div>
+    
+    <!-- Encabezado del Examen -->
+    <div class="exam-header">
+        <h1>Examen Tercer Parcial de Preventiva II</h1>
+        <p>Instrucciones:</p>
+        <ul>
+            <li>Lee cuidadosamente cada pregunta antes de responder.</li>
+            <li>Tendrás un tiempo límite de 20 segundos por pregunta.</li>
+            <li>Si utilizas la opción de "Mostrar pista", el valor de la pregunta será menor.</li>
+            <li>Presiona "Siguiente" para avanzar a la siguiente pregunta.</li>
+            <li>Al finalizar, verás tu puntuación y las pistas utilizadas.</li>
+        </ul>
+    </div>
+
+    <!-- Contenedor del Cuestionario -->
+    <div class="quiz-container">
+        <div class="question-number">Pregunta 1 de 50</div>
+        <div class="timer">20s</div>
+        <div class="progress-bar-container">
+            <div class="progress-bar"></div>
+        </div>
+        <div class="question-text">
+            <!-- Aquí aparecerá la pregunta -->
+        </div>
+        <div class="options-container">
+            <!-- Aquí aparecerán las opciones -->
+        </div>
+        <button class="next-btn" id="nextBtn" disabled>Siguiente</button>
+        <button class="hint-btn">Mostrar pista</button>
+    </div>
+
+    <!-- Enlace al Script -->
+    <script src="script.js"></script>
+</body>
+</html>
